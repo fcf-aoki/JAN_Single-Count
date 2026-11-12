@@ -1,4 +1,4 @@
-const CACHE_NAME = 'jan-simple-multilingual-v1-3';
+const CACHE_NAME = 'jan-simple-multilingual-v1-4';
 const ASSETS = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', event => {event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));});
 self.addEventListener('activate', event => {event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key.startsWith('jan-simple-multilingual-') && key !== CACHE_NAME).map(key => caches.delete(key)))).then(() => self.clients.claim()));});
