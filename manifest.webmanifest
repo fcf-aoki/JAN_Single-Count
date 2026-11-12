@@ -1,6 +1,6 @@
 {
-  "name": "JAN Single-Count Ver.1.4",
-  "short_name": "JAN Single-Count",
+  "name": "JAN Check",
+  "short_name": "JAN Check",
   "description": "Offline multilingual barcode inspection",
   "start_url": "./",
   "scope": "./",
